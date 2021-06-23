@@ -1,3 +1,10 @@
+:root{
+    --primary-color:#0E0B16;
+    --secundary-color:#A239CA;
+    --button-color:#4717F6;
+    --text-color:#E7DFDD;
+}
+
 *{
     margin: 0;
     padding: 0;
