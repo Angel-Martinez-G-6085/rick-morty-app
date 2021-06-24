@@ -4,11 +4,21 @@ $header:header;
 $menu:menu;
 
 .#{$header}{
+    position: relative;
     width: 100vw;
     height: 16vh;
+    background-color: var(--primary-color);
+
+    &__icon-open{
+        display: inline-block;
+        height: 100%;
+        font-size: 7rem;
+        cursor: pointer;
+        margin-left: 1rem;
+        color: whitesmoke;
+    }
 
     & .nav-bar{
-        position: relative;
         height: 100%;
     }
 }
@@ -16,11 +26,15 @@ $menu:menu;
 .#{$menu}{
     display: inline-block;
     position: absolute;
+    top: 0;
+    left: 0;
     background-color: var(--primary-color);
     width: 40%;
     min-height: 100vh;
+    transform: translateX(-100%);
+    transition: 0.5s;
 
-    &__icon{
+    &__icon-close{
         position: absolute;
         top: -1%;
         right:5%;
@@ -44,4 +58,9 @@ $menu:menu;
             background-color: var(--secundary-color);
         }
     }
+}
+
+.open-menu{
+    transform: translateX(0);
+    transition: 0.5s;
 }
