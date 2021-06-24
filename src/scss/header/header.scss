@@ -1,0 +1,47 @@
+@import '@styles/buttons/buttons.scss';
+
+$header:header;
+$menu:menu;
+
+.#{$header}{
+    width: 100vw;
+    height: 16vh;
+
+    & .nav-bar{
+        position: relative;
+        height: 100%;
+    }
+}
+
+.#{$menu}{
+    display: inline-block;
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 40%;
+    min-height: 100vh;
+
+    &__icon{
+        position: absolute;
+        top: -1%;
+        right:5%;
+        color:var(--text-color);
+        font-size: 2.6rem;
+        cursor: pointer;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid gray;
+        cursor: pointer;
+        height: 100px;
+    }
+
+    &__link{
+        @extend %button;
+
+        &:hover{
+            background-color: var(--secundary-color);
+        }
+    }
+}
