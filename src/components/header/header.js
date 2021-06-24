@@ -15,7 +15,6 @@ const menuLogic=()=>{
     clickOneElement(menuIconOpen);
     clickOneElement(menuIconClose);
     clickElements(menuItems);
-    closeWithBody();
 }
 
 const clickOneElement=(element)=>{
