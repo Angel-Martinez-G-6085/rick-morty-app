@@ -1,4 +1,4 @@
-import '../public/styles.css'
-const {app}=require('@components/app/app');
+import '../public/styles.css';
+import app from '@components/app/app';
 
 app();

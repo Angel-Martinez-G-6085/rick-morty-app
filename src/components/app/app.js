@@ -1,3 +1,6 @@
 import loadHeader from '@components/header/header';
 
-loadHeader();
+export const app=()=>{
+    loadHeader();
+}
+export default app;
