@@ -26,6 +26,7 @@ module.exports={
         compress: true,
         port: 3000,
         open:true,
+        watchContentBase: true
     },
     
     module:{
@@ -41,7 +42,6 @@ module.exports={
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader',
-                    'postcss-loader'
                 ]
             },
             {

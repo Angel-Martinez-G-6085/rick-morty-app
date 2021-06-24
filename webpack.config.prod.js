@@ -65,6 +65,10 @@ module.exports={
                     name: 'assets/fonts/[name].[ext]',
                 }
             },
+            {
+                test:/\.html$/i,
+                loader:'html-loader',
+            },
         ]
     },
     plugins:[
